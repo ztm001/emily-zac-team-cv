@@ -1,0 +1,202 @@
+/* 
+
+CV Site Styles CSS 
+by Emily James
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+/*
+Layout ----------------------------------*/
+
+h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 53px;
+	color: #412771;
+	line-height: 0;	
+	font-weight: normal;
+	margin-bottom: 30px;
+	margin-top: 210px;
+	padding-top: 30px;
+}
+
+h2 {
+	font-size: 35px;
+	color: #412771;
+	font-weight: normal;
+}
+
+.intro {
+	font-size: 20px;
+	color: #938ba3;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+.social {
+	position: fixed;
+	top: 6px;
+	right: 5%;
+}
+
+.social ul li {
+	list-style: none;
+	text-align: center;
+}
+
+.social ul li a {
+	color: #ecdff1;
+}
+
+body {
+	width: 75%;
+	max-width: 960px;
+	margin: 0 auto;
+	font-family: "courier new";
+	font-size: 16px;
+	color: #2a2727;
+	background: url(images/pattern-bg.jpg);
+}
+
+header {
+	text-align: center;
+}
+
+section {
+	background: #fff;
+	padding: 2px 20px;
+	margin-top: 2px;
+	overflow: auto;
+}
+
+img {
+	width: 100%;
+	max-width: 320px;
+	height: auto;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.images {
+	padding:0;
+}
+
+.images li {
+	list-style:none;
+}
+
+.images img {
+	display:block;
+}
+
+.company {
+	color: #412771;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#work ul {
+	max-width: 500px;
+}
+
+#work ul li {
+	list-style: none;
+	margin-top: 15px;
+}
+
+.column {
+	float: left;
+	width: 40%;
+	overflow: auto;
+
+}
+
+
+
+/* Navigation 
+------------------------------------------*/
+
+nav ul {
+	width: 200px;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 0.4em 20px;
+	border: 2px solid #ecdff1;
+	border-radius: 15px;
+	text-align: center;
+	background: rgba(255, 255, 255, .85);
+}
+
+nav ul li:hover {
+	background: #ecdff1;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 0.2em 0;
+	display:block;
+}
+
+#sticky {
+	margin: 0 auto;
+	padding: .5em auto;
+	width: 75%;
+	max-width: 960px;
+	position: fixed;
+	top: 20px;
+	}
+
+
+/* Clearfix
+-------------------------------------------*/
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+
+/* Media Queries
+-------------------------------------------*/
+
+@media screen and (min-width: 800px) {
+
+	nav ul {
+		width: 100%;
+		max-width: 960px;
+	}
+
+	nav ul li {
+		float: left;
+		width: 17.7%;
+	}
+
+	h1 {
+		font-family: 'Sacramento', cursive;
+		color: #412771;
+		line-height: 1.6em;
+		font-size: 115px;
+		font-weight: normal;
+		margin-bottom: 30px;
+		margin-top: 90px;
+		padding-top: 30px;
+	}
+	
+	.images li {
+		float:left;
+	}
+
+	.intro {
+		margin-bottom: 80px;
+		margin-top: 50px;
+}
+
+}
